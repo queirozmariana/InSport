@@ -1,0 +1,143 @@
+/* global.css - reset, variáveis, tipografia e utilitários */
+:root{
+  --bg: #F8F0E3;
+  --orange: #DF7220;
+  --orange-slogan: #FF8F1A;
+  --green: #2F6950;
+  --blue: #225785;
+  --yellow: #F4BC0B;
+  --text: #222;
+  --muted: #6b6b6b;
+  --radius: 12px;
+  --container: 1100px;
+  --gap: 1.25rem;
+}
+
+/* Reset mínimo */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:var(--text);
+  background-color:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+  font-size:16px;
+}
+
+/* Container */
+.container{
+  width:calc(100% - 2rem);
+  max-width:var(--container);
+  margin:0 auto;
+}
+
+/* Accessibility helpers */
+.sr-only{
+  position:absolute!important;
+  width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
+}
+.skip-link{
+  position:absolute;
+  left:0;
+  top:-40px;
+  background:#000;color:#fff;padding:8px 16px;border-radius:4px;z-index:999;
+}
+.skip-link:focus{top:8px}
+
+/* Header */
+.site-header{
+  background:transparent;
+  border-bottom:1px solid rgba(0,0,0,0.06);
+  position:sticky;
+  top:0;
+  z-index:50;
+  backdrop-filter: blur(4px);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:0.8rem 0}
+.brand{display:flex;align-items:center;gap:0.5rem;text-decoration:none;color:inherit}
+.brand-logo{width:44px;height:44px;border-radius:8px;object-fit:cover}
+.brand-title{display:flex;flex-direction:column;line-height:1.1}
+.brand-name{font-weight:700;font-size:1.05rem;color:var(--orange)}
+.brand-slogan{font-weight:600;font-size:.9rem;color:var(--orange-slogan);margin-top:2px}
+.btn-menu{display:none;background:none;border:0;font-size:1.25rem;padding:8px;border-radius:8px}
+
+/* Nav */
+.main-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+.main-nav a{text-decoration:none;color:var(--text);padding:8px;border-radius:8px;display:inline-block}
+.main-nav a:focus, .main-nav a:hover{background:rgba(0,0,0,0.04)}
+.main-nav a.active{font-weight:700;color:var(--blue)}
+
+/* Buttons */
+.btn{display:inline-block;padding:0.6rem 1rem;border-radius:10px;text-decoration:none;font-weight:600}
+.btn-primary{background:var(--orange);color:white}
+.btn-primary:focus, .btn-primary:hover{background:var(--orange-slogan)}
+.btn-outline{border:2px solid var(--blue);color:var(--blue);background:white}
+.btn-outline:focus, .btn-outline:hover{background:rgba(34,87,133,0.06)}
+.btn-secondary{background:var(--green);color:white}
+
+/* Hero */
+.hero{padding:2rem 0}
+.hero-grid{display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:center}
+.hero-text h1{font-size:2rem;margin:0 0 .5rem;color:var(--blue)}
+.lead{color:var(--muted)}
+
+/* Feature cards */
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem}
+.feature-card{background:white;padding:1rem;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.feature-card h3{margin-top:0}
+
+/* Callout */
+.callout{margin:2rem 0;padding:1.5rem;border-radius:14px;background:linear-gradient(90deg, rgba(255,143,26,0.06), rgba(223,114,32,0.04))}
+.callout-inner{display:flex;gap:1rem;align-items:center;justify-content:space-between}
+.callout-inner h2{margin:0 0 .5rem;color:var(--green)}
+
+/* Cards grid */
+.cards, .cards-container{
+  display:flex;
+  gap:1rem;
+  overflow-x:auto;
+  scroll-behavior:smooth;
+  padding-bottom:1rem;
+}
+.cards::-webkit-scrollbar,
+.cards-container::-webkit-scrollbar{display:none}
+
+/* Card padrão */
+.card{
+  background:white;
+  border-radius:var(--radius);
+  box-shadow:0 6px 16px rgba(0,0,0,0.06);
+  flex:0 0 280px;
+  padding:1rem;
+  display:flex;
+  flex-direction:column;
+}
+.card img{border-radius:var(--radius);margin-bottom:0.5rem}
+.card h3{margin:0.5rem 0;color:var(--blue)}
+.card .info{list-style:none;padding:0;margin:0.5rem 0}
+.card .info li{margin-bottom:0.25rem}
+.btn-card{background:var(--orange);color:white;text-align:center;padding:0.5rem;border-radius:8px;text-decoration:none;font-weight:600;margin-top:0.5rem}
+.btn-card:hover{background:var(--orange-slogan)}
+.resumo{color:var(--text);margin-top:0.5rem}
+
+/* Footer */
+.site-footer{margin-top:2.5rem;padding:2rem 0}
+.footer-grid{display:flex;gap:1.5rem;align-items:flex-start;justify-content:space-between}
+.site-footer a{color:inherit}
+
+/* Utility */
+img{max-width:100%;height:auto;display:block;border-radius:10px}
+small{color:var(--muted)}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;text-align:center}
+  .features{grid-template-columns:1fr}
+  .header-inner{padding:0.6rem 0}
+  .btn-menu{display:block}
+  .main-nav{display:none}
+  .main-nav.open{display:block;background:var(--bg);position:absolute;right:1rem;top:64px;padding:1rem;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,0.08)}
+}

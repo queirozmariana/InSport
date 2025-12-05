@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - InSport</title>
+
+    <!-- CSS Global -->
+    <link rel="stylesheet" href="../css/global.css/global.css">
+
+    <!-- CSS da Página -->
+    <link rel="stylesheet" href="../css/eventos.css/eventos.css">
+</head>
+<body>
+
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+    <!-- Header -->
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a class="brand" href="../" aria-label="InSport - Movimento é para Todos">
+                <img src="../imagens/img.icones/Logo.png" alt="Logotipo InSport" class="brand-logo">
+                <div class="brand-title">
+                    <span class="brand-name">InSport</span>
+                    <span class="brand-slogan">Movimento é para Todos</span>
+                </div>
+            </a>
+
+            <button class="btn-menu" id="btnMenu" aria-expanded="false" aria-controls="mainNav">
+                ☰
+                <span class="sr-only">Abrir menu</span>
+            </button>
+
+            <nav id="mainNav" class="main-nav" role="navigation" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="../pages/início.html">Início</a></li>
+                    <li><a href="../pages/sobre.html">Sobre Nós</a></li>
+                    <li><a class="active" href="../pages/eventos.html">Eventos</a></li>
+                    <li><a href="../pages/serviços.html">Serviços</a></li>
+                    <li><a href="../pages/acessibilidade.html">Acessibilidade</a></li>
+                    <li><a href="../pages/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main id="main" class="site-main container">
+        <h1 class="titulo-pagina">Nossos Eventos</h1>
+        <p class="descricao-pagina">
+            Acompanhe nossos eventos inclusivos — futuros e passados — todos pensados para promover esporte, inclusão e transformação social.
+        </p>
+
+        <!-- Próximos Eventos -->
+        <h2 class="subtitulo">Próximos Eventos</h2>
+        <div class="cards-container" id="proximosEventos">
+            <div class="card">
+                <img src="../imagens/eventos/futebol.jpeg" alt="Futebol Inclusivo">
+                <h3>Futebol Inclusivo</h3>
+                <ul class="info">
+                    <li><strong>Data:</strong> 15/09/2025</li>
+                    <li><strong>Local:</strong> Estádio Municipal</li>
+                    <li><strong>Público:</strong> Pessoas com e sem deficiência</li>
+                </ul>
+                <a class="btn-card" href="../pages/participe.html">Inscreva-se</a>
+            </div>
+            <div class="card">
+                <img src="../imagens/eventos/corrida.jpeg" alt="Corrida Solidária">
+                <h3>Corrida Solidária</h3>
+                <ul class="info">
+                    <li><strong>Data:</strong> 28/09/2025</li>
+                    <li><strong>Local:</strong> Parque Central</li>
+                    <li><strong>Público:</strong> Público geral</li>
+                </ul>
+                <a class="btn-card" href="../pages/participe.html">Inscreva-se</a>
+            </div>
+            <div class="card">
+                <img src="../imagens/eventos/natacao.jpeg" alt="Natação Adaptada">
+                <h3>Aula de Natação Adaptada</h3>
+                <ul class="info">
+                    <li><strong>Data:</strong> 05/10/2025</li>
+                    <li><strong>Local:</strong> Clube Aquático</li>
+                    <li><strong>Público:</strong> Pessoas com deficiência física</li>
+                </ul>
+                <a class="btn-card" href="../pages/participe.html">Inscreva-se</a>
+            </div>
+        </div>
+
+        <!-- Eventos Realizados -->
+        <h2 class="subtitulo">Eventos Realizados</h2>
+        <div class="cards-container" id="eventosRealizados">
+            <div class="card">
+                <img src="../imagens/eventos/festival.jpeg" alt="Festival Esportivo">
+                <h3>Festival Esportivo Inclusivo</h3>
+                <ul class="info">
+                    <li><strong>Data:</strong> 10/05/2025</li>
+                    <li><strong>Local:</strong> Ginásio Poliesportivo</li>
+                </ul>
+                <p class="resumo">Reuniu mais de 200 atletas de diversas modalidades adaptadas.</p>
+            </div>
+            <div class="card">
+                <img src="../imagens/eventos/basquete.jpeg" alt="Basquete Adaptado">
+                <h3>Torneio de Basquete em Cadeira de Rodas</h3>
+                <ul class="info">
+                    <li><strong>Data:</strong> 22/06/2025</li>
+                    <li><strong>Local:</strong> Quadra Central</li>
+                </ul>
+                <p class="resumo">Competições emocionantes com equipes de várias cidades.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <strong>InSport</strong>
+                <p>Movimento é para todos — inclusão através do esporte.</p>
+            </div>
+            <nav aria-label="Links do rodapé">
+                <ul>
+                    <li><a href="../pages/sobre.html">Sobre</a></li>
+                    <li><a href="../pages/contato.html">Contato</a></li>
+                    <li><a href="../pages/acessibilidade.html">Acessibilidade</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container copyright">
+            <small>© <span id="year"></span> InSport — Todos os direitos reservados.</small>
+        </div>
+    </footer>
+
+    <!-- JS Global -->
+    <script src="../js/global.js/global.js"></script>
+
+    <!-- JS da Página Eventos -->
+    <script src="../js/eventos.js/eventos.js"></script>
+</body>
+</html>

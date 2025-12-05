@@ -1,0 +1,50 @@
+/* Títulos */
+.sobre h1 {
+    color: var(--blue);
+    margin-bottom: 1rem;
+}
+
+.sobre p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.sobre h2 {
+    margin-top: 2rem;
+    color: var(--orange);
+}
+
+/* Galerias */
+.galeria,
+.galeria-equipe {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.galeria img,
+.galeria-equipe img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.07);
+    object-fit: cover;
+}
+
+/* Lista de valores */
+.valores {
+    margin: 1rem 0 2rem;
+    padding-left: 1.2rem;
+}
+
+.valores li {
+    margin-bottom: .6rem;
+    line-height: 1.5;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+    .sobre h1 {
+        font-size: 1.8rem;
+    }
+}

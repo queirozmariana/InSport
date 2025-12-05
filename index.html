@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>InSport — Movimento é para Todos</title>
+  <meta name="description" content="InSport — plataforma de esportes inclusivos. Movimento é para todos." />
+
+  <!-- CSS Global + CSS da Página -->
+  <link rel="stylesheet" href="../css/global.css/global.css">
+  <link rel="stylesheet" href="../css/inicio.css/inicio.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html" aria-label="InSport - Movimento é para Todos">
+      <img src="../imagens/img.icones/Logo.png" alt="Logotipo InSport" class="brand-logo">
+      <div class="brand-title">
+        <span class="brand-name">InSport</span>
+        <span class="brand-slogan">Movimento é para Todos</span>
+      </div>
+    </a>
+
+    <button class="btn-menu" id="btnMenu" aria-expanded="false" aria-controls="mainNav">
+      ☰
+      <span class="sr-only">Abrir menu</span>
+    </button>
+
+    <nav id="mainNav" class="main-nav">
+      <ul>
+        <li><a class="active" href="../pages/início.html">Início</a></li>
+        <li><a href="../pages/sobre.html">Sobre</a></li>
+        <li><a href="../pages/serviços.html">Eventos</a></li>
+        <li><a href="../pages/servicos.html">Serviços</a></li>
+        <li><a href="../pages/acessibilidade.html">Acessibilidade</a></li>
+        <li><a href="../pages/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Conteúdo Principal -->
+<main id="main" class="site-main">
+
+<!-- HERO COM CARROSSEL -->
+<section class="hero">
+  <div class="container hero-grid">
+
+    <div class="hero-text">
+      <h1>Movimento é para Todos</h1>
+      <p class="lead">Encontre espaços, academias e atividades adaptadas — com suporte em LIBRAS, acessibilidade e equipamentos.</p>
+      <p>
+        <a class="btn btn-primary" href="../pages/participe.html">Quero participar</a>
+        <a class="btn btn-outline" href="../pages/eventos.html">Ver eventos</a>
+      </p>
+    </div>
+
+    <!-- CARROSSEL -->
+    <div class="hero-carousel">
+
+      <div class="carousel-track">
+        <div class="carousel-item">
+          <img src="../imagens/img.início/Pessoa praticando esporte adaptado.jpg" alt="Esporte 1">
+        </div>
+
+        <div class="carousel-item">
+          <img src="../imagens/img.início/Mulher no Sol.jpg" alt="Esporte 2">
+        </div>
+
+        <div class="carousel-item">
+          <img src="../imagens/img.início/Basquete inclusivo.jpg" alt="Esporte 3">
+        </div>
+      </div>
+
+      <button class="carousel-btn prev">❮</button>
+      <button class="carousel-btn next">❯</button>
+
+    </div> 
+
+  </div> 
+</section> 
+
+  <section class="features container">
+    <article class="feature-card">
+      <h3>Locais acessíveis</h3>
+      <p>Busque por academias e centros com rampas, espaço adaptado e equipamentos.</p>
+    </article>
+    <article class="feature-card">
+      <h3>Suporte em LIBRAS</h3>
+      <p>Programas com instrutores capacitados e tradução em libras.</p>
+    </article>
+    <article class="feature-card">
+      <h3>Paradesport e adaptações</h3>
+      <p>Modalidades adaptadas e acompanhamento especializado.</p>
+    </article>
+  </section>
+
+  <section class="callout container">
+    <div class="callout-inner">
+      <h2>Quer ajudar a tornar o esporte acessível?</h2>
+      <p>Seja voluntário, doe equipamentos, ou indique um local — juntos fazemos o movimento crescer.</p>
+      <a class="btn btn-secondary" href="../pages/participe.html">Como participar</a>
+    </div>
+  </section>
+
+  <section class="recent container">
+    <h2>Eventos recentes</h2>
+    <div class="cards" id="eventsList">
+      <!-- Conteúdo gerado por inicio.js -->
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>InSport</strong>
+      <p>Movimento é para todos — inclusão através do esporte.</p>
+    </div>
+
+    <nav aria-label="Links do rodapé">
+      <ul>
+        <li><a href="../pages/sobre.html">Sobre</a></li>
+        <li><a href="../pages/contato.html">Contato</a></li>
+        <li><a href="../pages/acessibilidade.html">Acessibilidade</a></li>
+      </ul>
+    </nav>
+
+    <div class="social">
+      <a href="#"><img src="../imagens/img.icones/whatsapp.svg" alt="WhatsApp"></a>
+      <a href="#"><img src="../imagens/img.icones/email.svg" alt="Email"></a>
+    </div>
+  </div>
+
+  <div class="container copyright">
+    <small>© <span id="year"></span> InSport — Todos os direitos reservados.</small>
+  </div>
+</footer>
+
+<script src="../js/global.js/global.js"></script>
+<script src="../js/inicio.js/inicio.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+/* Página Serviços */
+
+.servicos-wrapper {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.titulo-pagina {
+    color: var(--blue);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.descricao-intro {
+    color: var(--muted);
+    max-width: 700px;
+    margin-bottom: 2rem;
+}
+
+.accordion details {
+    background: white;
+    margin-bottom: 1rem;
+    border-radius: var(--radius);
+    padding: 1rem;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+
+.accordion summary {
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: var(--green);
+}
+
+.accordion .conteudo {
+    margin-top: 1rem;
+}
+
+.accordion table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.accordion table th {
+    background: var(--blue);
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.accordion table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+blockquote {
+    background: #f7f7f7;
+    padding: 1rem;
+    border-left: 4px solid var(--orange);
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
